@@ -1,4 +1,3 @@
-
 # NFL Fantasy Football Trade Analyzer
 
 A fantasy football trade analyzer that uses NFL player data to compare player value, recent performance, consistency, and upcoming matchups.
@@ -25,21 +24,23 @@ Users can compare individual players or multiple players on each side of a propo
 * Evaluated weekly scoring consistency
 * Calculated upcoming matchup scores
 * Created a weighted Trade Value Score
-* Built a trade evaluation function
+* Built a trade evaluation function for multi-player trades
 * Created interactive Plotly visualizations
 
 ## Trade Value Score
 
 The current scoring framework uses:
 
-| Metric             | Weight |
-| ------------------ | -----: |
-| Production         |    45% |
-| Recent Performance |    25% |
-| Consistency        |    15% |
-| Matchup            |    15% |
+| **Metric**         | **Weight** |
+| ------------------ | ---------- |
+| Production         | 60%        |
+| Recent Performance | 20%        |
+| Consistency        | 10%        |
+| Matchup            | 10%        |
 
 The score is designed as a transparent analytical framework rather than a guaranteed prediction of future fantasy performance.
+
+For trade comparisons, the analyzer calculates the total Trade Value of each side and determines the difference between the receiving and giving sides.
 
 ## Visualizations
 
@@ -55,7 +56,6 @@ The notebook includes interactive visualizations for:
 * **Pandas**
 * **NumPy**
 * **Plotly**
-* **Scikit-learn**
 * **NFLverse / nflreadpy**
 
 ## Data
@@ -80,3 +80,4 @@ Future versions could incorporate these factors and validate the Trade Value Sco
 ## Conclusion
 
 This project demonstrates how Python, data preparation, feature engineering, statistical analysis, and interactive visualization can be combined to build a practical fantasy football analytics tool.
+
